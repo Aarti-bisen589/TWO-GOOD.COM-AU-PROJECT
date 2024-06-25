@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-color: #F7F7F7F7;
+}
+#nav{
+    width: 100%;
+    /* height: 10%; */
+  
+    position: fixed;
+    z-index: 99;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#nav-part1{
+    height: 82px;
+     margin-top: 30px; 
+
+}
+#nav-part1 svg{
+  display: flex;
+  /* margin-top: 10%;   */
+}
+#nav #nav-part2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:40px;
+
+}
+
+#link a{
+ text-transform: uppercase; 
+  text-decoration: none;
+  gap: 20%;
+  color: #333;
+  font-weight: 500;
+  font-size: 14px;
+  margin:20px ;
+
+
+}
+#icone{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+#nav-part2 #icone i{
+    font-size: 20px;
+    margin-right: 50px;
+   gap:30px;
+
+}
+#cursor{
+    height: 40%;
+    width: 20%;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+      transform: translate(-50%,-50%) scale(0); 
+      
+      
+  
+
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    /* background-color: red; */
+   width: 100%; 
+   /* font-family: futura;  */
+   padding: 0 2vw;
+   padding-top: 15vw;
+}
+#page1 h1{
+    font-size: 15vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 15vw;
+    letter-spacing: -5px;
+    /* background-color: aqua; */
+
+}
+#video-container{
+  min-height:100vh ;
+    width:100%;
+    overflow: hidden;
+    /* background-color: grey; */
+}
+
+#video-containe #video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* position: relative; */
+}
+ #play{
+    padding: 2vw 1.5vw;
+    font-size: 2vw;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff;
+    font-family: futura; 
+    border-radius: 50%;
+    position: fixed;
+   opacity: 0;
+   scale: 0;
+}
+
+#page4{
+    width: 100%;
+    height: 120vh;
+    
+}
+#page4 img{
+    width: 100%;
+    height: 110%;
+    padding: 40px 30px;
+}
+#page4 svg{
+   position: absolute;
+   left: 60%;
+   top: 30%;
+  animation: anim 10s linear infinite;
+  
+}
+@keyframes anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+#page4 h1{
+    color: black;
+    position: absolute;
+    top:31.3%;
+    left: 64.5%;
+    font-weight: 900;
+    z-index: 99;
+   
+}
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3w 1w;
+
+
+}
+#page2 .elem{
+    height: 100%;
+    width: 31%;
+    /* background-color: brown; */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1;
+}
+
+#page2 .elem .dets{
+    font-weight: 300;
+    width: 80%;
+    height: 50px;
+    background-color: pink;
+    position: absolute;
+    border-radius: 30px;
+    z-index: 9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+
+   
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+}
+/* #contain{
+    height: 50%;
+    width: 80%;
+    background-color: pink;
+   
+}
+#shopping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#text{
+    width: 30%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#text1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+#page2 .elem .dets:hover #contain{
+  left: -30%;
+
+} 
+
+#page3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+    /* background-color: brown;
+    border: 2px solid black; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.child img{
+    height: 100%;
+}
+#word{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 100;
+   
+}
+#line{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+
+}
+#page5{
+    width: 100%;
+    
+  
+   
+ 
+}
+#page5 h1{
+    font-size: 45px;
+    text-align: center;
+    width: 75%;
+    margin-left: 15%;
+    padding: 5% 5%;
+    font-weight:bold;
+    font-family: futura;
+    
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+
+}
+#page5 button{
+    margin-left: 40%;
+    background-color: black;
+    color: #fff;
+    padding: 20px 80px;
+   border-radius: 40px;
+   font-size: 20px;
+   border: 2px solid black;
+}
+#page5 h3{
+    padding-top: 10px;
+    width: 30%;
+    margin-left: 40%;
+    font-weight: 300;
+    text-align: center;
+}
+#page5 h3{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#page6{
+    height: 200vh;
+    width: 100%;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+#page6 img{
+    width: 160%;
+    height: 50%;
+}
+#our h2{
+    padding: 30px 5px;
+}
+#our p{
+    padding: 10px;
+}
+#our h3{
+    padding: 20px;
+}
+
+#page7{
+    width: 100%;
+    height: 80vh;
+   padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items:first baseline;
+}
+#svg svg{
+    padding: 50px;
+   width: 90%;
+   height: 100%;
+   margin-top: 40px;  
+}
+#the{
+    font-weight: 100;
+}
+#two{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-left: 30%;
+    margin-top: -40px;
+}
+#page8 h1{
+   text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 3% 10%;
+    
+
+}
+
+
+
+
